@@ -70,7 +70,7 @@ export const DATA = {
       badges: [],
       location: "Boise, ID (Remote)",
       title: "Software Engineering Intern",
-      logoUrl: "https://media.licdn.com/dms/image/v2/C560BAQFViKTcWEHjAg/company-logo_200_200/company-logo_200_200/0/1630614091517?e=2147483647&v=beta&t=NOCSsQS0PteQgE9LjkJDhq8Lowkwqif1ugbTvXD0kvs",
+      logoUrl: "/ystemchessinc.jpeg",
       start: "January 2025",
       end: "May 2025",
       description:
@@ -236,8 +236,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "https://private-user-images.githubusercontent.com/113549918/380361686-5911cb7e-eab2-4ec6-920e-a3ce3ecf518b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc4OTA2ODAsIm5iZiI6MTc0Nzg5MDM4MCwicGF0aCI6Ii8xMTM1NDk5MTgvMzgwMzYxNjg2LTU5MTFjYjdlLWVhYjItNGVjNi05MjBlLWEzY2UzZWNmNTE4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyMlQwNTA2MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMjdkODdhNTBjNDk1ZWE0ZmVjYTA4N2UwNTY3ZDFmNTU1MjBjNjYxZGI3MGMwYzAzZGRmY2FlODg0NjMyMDdkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.utbl1OqXyFJhzaNz_4FzU9baGEEAutuNoLEiJWwWXc8", // Add a before/after screenshot of the LeetCode interface
-      video: "", // Optional Loom/YT showing it in action
+      image:"/leetcodeext.png",
+            video: "", // Optional Loom/YT showing it in action
     },
     {
       title: "HTTP Server",
