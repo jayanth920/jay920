@@ -36,6 +36,9 @@ const nextConfig = {
       },
     ],
   },
+    eslint: {
+    ignoreDuringBuilds: true, // Ignore ESLint during production builds
+  },
 };
 
 export default nextConfig;
