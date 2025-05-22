@@ -72,7 +72,7 @@ export const DATA = {
       title: "Software Engineering Intern",
       logoUrl: "https://media.licdn.com/dms/image/v2/C560BAQFViKTcWEHjAg/company-logo_200_200/company-logo_200_200/0/1630614091517?e=2147483647&v=beta&t=NOCSsQS0PteQgE9LjkJDhq8Lowkwqif1ugbTvXD0kvs",
       start: "January 2025",
-      end: "April May 2025",
+      end: "May 2025",
       description:
         `Migrated the organization's Angular frontend to a React TypeScript monorepo, improving scalability, maintainability, and UI performance while designing reusable components and enhancing user login/register functionalities.
         Collaborated with a 12-person team using Slack and Figma to deliver a responsive web platform that supports underrepresented students.
