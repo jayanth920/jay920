@@ -1,9 +1,10 @@
 "use client"
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { useTheme } from "next-themes";
+
 
 
 const ContactForm = () => {
@@ -14,7 +15,19 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [subject, setSubject] = useState("");
   const form = useRef<any>();
-  const { theme } = useTheme();
+  const { theme: providerTheme } = useTheme();
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("dark");
+
+  useEffect(() => {
+    // Check localStorage first
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "light" || storedTheme === "dark") {
+      setResolvedTheme(storedTheme);
+    } else {
+      // fallback to ThemeProvider's theme
+      setResolvedTheme(providerTheme === "light" ? "light" : "dark");
+    }
+  }, [providerTheme]);
 
   const sites = [
     {
@@ -34,7 +47,7 @@ const ContactForm = () => {
       name: "Github",
       designation: "",
       image:
-        theme === "light"
+        resolvedTheme === "light"
           ? "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png"
           : "https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png",
       href: "https://github.com/jayanth920"
@@ -162,8 +175,8 @@ const ContactForm = () => {
 
     text-white
     bg-black
-    border-white
-    shadow-[1px_1px_0_white,2px_2px_0_white,3px_3px_0_white,4px_4px_0_white,5px_5px_0_white]
+    border-black
+    shadow-[1px_1px_0_black,2px_2px_0_white,3px_3px_0_black,4px_4px_0_white,5px_5px_0_black]
 
     dark:text-white
     dark:bg-black
