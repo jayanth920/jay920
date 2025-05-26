@@ -113,6 +113,38 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Ungithub",
+      href: "https://ungithub.vercel.app",
+      dates: "May 2025",
+      active: true,
+      description:
+        "Ungithub lets you explore any GitHub repo by asking questions powered by vector search and Gemini AI. It reads and understands the codebase for you, only once, then no setup, no digging, just ask and get your answers instantly. Backend deployed on a free-tier render server, it might take a few seconds to startup, but once loaded, answers are instant. Currently free.",
+      technologies: [
+        "Next.js",
+        "MongoDB Atlas",
+        "Python",
+        "FastAPI",
+        "NLP",
+        "LangChain",
+        "Gemini AI"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ungithub.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+                {
+          type: "GitHub",
+          href: "https://github.com/jayanth920/ungithub",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ungithub.png",
+      video:
+        "",
+    },
+    {
       title: "Aurable",
       href: "https://aurable.vercel.app",
       dates: "May 2025",
@@ -130,6 +162,11 @@ export const DATA = {
           type: "Website",
           href: "https://aurable.vercel.app",
           icon: <Icons.globe className="size-3" />,
+        },
+                {
+          type: "GitHub",
+          href: "https://github.com/jayanth920/aurable",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/aurable.png",
@@ -184,9 +221,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Shell",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
+          type: "Github",
+          href: "https://github.com/jayanth920/boss-shell",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/boss-shell.png",
@@ -236,8 +273,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image:"/leetcodeext.png",
-            video: "", // Optional Loom/YT showing it in action
+      image: "/leetcodeext.png",
+      video: "", // Optional Loom/YT showing it in action
     },
     {
       title: "HTTP Server",
@@ -251,9 +288,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Server",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
+          type: "Github",
+          href: "https://github.com/jayanth920/http-server-js",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1ph7yc1i1vqqgwpxegw5.png",
@@ -275,14 +312,14 @@ export const DATA = {
       ],
       links: [
         {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: "GitHub",
           href: "https://github.com/jayanth920/live-docs",
           icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Live Demo",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/livedocs.png",
