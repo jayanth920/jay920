@@ -34,6 +34,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "i.gyazo.com",
       },
+      {
+        protocol: "https",
+        hostname: "uxwing.com",
+      },
     ],
   },
     eslint: {

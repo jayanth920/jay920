@@ -26,7 +26,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/projects", icon: NotebookIcon, label: "Projects" },
   ],
   contact: {
     email: "ej.developer.d@gmail.com",

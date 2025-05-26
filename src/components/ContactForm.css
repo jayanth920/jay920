@@ -66,7 +66,7 @@
   margin-top: 2rem;
 }
 
-.contact-form2 .formsub_btn {
+/* .contact-form2 .formsub_btn {
 font-family: "Open Sans", sans-serif;
 font-size: 16px;
 letter-spacing: 2px;
@@ -99,6 +99,21 @@ left: 5px;
   padding: 0.25em 0.75em;
 }
 }
+
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  .contact-form2 .formsub_btn {
+    color: black;                 /* Black text */
+    background-color: white;     /* White background */
+    border: 3px solid black;     /* Black border */
+    box-shadow: 1px 1px 0 black,
+                2px 2px 0 black,
+                3px 3px 0 black,
+                4px 4px 0 black,
+                5px 5px 0 black;
+  }
+} */
 
 .contact-form2 form input,
 .contact-form2 form textarea {
