@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Software Engineer. I love building things and helping people out. Active on X.",
   summary:
-    "At the end of 2025, I want to go fulltime into building and scaling my SaaS apps. I am currently pursuing a, [batchelor's degree in computer science](/#education), [interned at Ystem n Chess Inc](#internship), and completed over 20 projects for fun. Currently learning AI/ML, trying to hack, also dabbling frontend UI/UX sites too.",
+    "At the end of 2025, I want to go fulltime into building and scaling my SaaS apps. I am currently pursuing a, [batchelor's degree in computer science](/#education), [interned at Ystem n Chess Inc](#education), and completed over 20 projects for fun. Currently learning AI/ML, trying to hack, also dabbling frontend UI/UX sites too.",
   avatarUrl: "/me.jpeg",
   skills: [
     "React",
@@ -35,28 +35,24 @@ export const DATA = {
         name: "GitHub",
         url: "https://git.new/jayanth",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://dub.sh/jayanth",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://dub.sh/runnindev",
         icon: Icons.x,
-
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "ej.developer.d@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },

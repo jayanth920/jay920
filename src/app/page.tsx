@@ -1,3 +1,4 @@
+"use client"
 import Contact from "@/components/Contact";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -9,10 +10,12 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+// import { useRouter } from "next/navigation";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  // const router = useRouter();
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -29,7 +32,12 @@ export default function Page() {
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
-              />
+                />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Badge className="text-center max-w-fit cursor-pointer" onClick={()=>{
+                  window.open("https://jay920.vercel.app/resume", "_blank")
+                }}>Resume</Badge>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
