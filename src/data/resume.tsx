@@ -312,7 +312,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://livedocs-main.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
