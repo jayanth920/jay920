@@ -5,7 +5,6 @@ const Resume = () => {
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
 
   useEffect(() => {
-    // Assuming your PDF file is located in the public directory
     const pdfPath = '/content/Resume.pdf';
     setPdfUrl(pdfPath);
   }, []);
