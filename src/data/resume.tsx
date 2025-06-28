@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Jayanth Gajula",
@@ -174,7 +175,7 @@ export const DATA = {
       dates: "May 2025",
       active: true,
       description:
-        "A psychological horror game built in Unity where players explore looping hotel hallways to identify eerie anomalies. The objective is to descend floors by correctly detecting changes in the environment—one mistake sends the player back to Floor 8. Features immersive visuals, voice command controls, dynamic anomalies, and post-processing effects.",
+        "A psychological horror game built in Unity where players explore looping hotel hallways to identify eerie anomalies. The objective is to descend floors by correctly detecting changes in the environment, one mistake sends the player back to Floor 8. Features immersive visuals, voice command controls, dynamic anomalies, and post-processing effects.",
       technologies: [
         "Unity",
         "C#",
@@ -322,5 +323,46 @@ export const DATA = {
     }
   ],
   hackathons: [
+    {
+  title: "VelociCode",
+  description:
+    "VelociCode is a month-long hackathon where developers and designers build creative, dino-themed games or tools using any tech stack. The theme for 2025 was 'EGG' and I made a language called egglang with .egg filenames and a  vs code extension as well.",
+  location: "TechPort San Antonio, TX",
+  dates: "June 2025",
+  image: "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/364/771/datas/full_width.png", 
+  links: [
+    {
+      type: "Website",
+      href: "https://hacksa-velocicode-2025.devpost.com/",
+      icon: <Icons.globe className="size-3" />,
+    },
+    {
+      type: "GitHub",
+      href: "https://github.com/jayanth920/egglang",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+},
+    {
+  title: "Google Cloud AI in Action",
+  description:
+    "A global Google Cloud hackathon with MongoDB and GitLab to build AI-powered apps using public datasets, cloud computing, and DevSecOps workflows. I made an app called ungithub to study repositories.",
+  location: "Online",
+  dates: "June 2025",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTroV7JQvlAS1wSXW3bIKdPG_lZBHkl3fZC9w&s", 
+  links: [
+    {
+      type: "Devpost",
+      href: "https://ai-in-action.devpost.com/",
+      icon: <Icons.globe className="size-3" />,
+    },
+    {
+      type: "GitHub",
+      href: "https://github.com/jayanth920/ungithub",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+}
+
   ],
 } as const;

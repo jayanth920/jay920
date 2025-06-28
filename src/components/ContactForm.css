@@ -1,78 +1,59 @@
 .contact-form2 {
-  width: 400px;
-  font-family: "Beatrice";
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: "Beatrice", sans-serif;
 }
 
 .contact-form2 form {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: stretch;
   width: 100%;
   font-size: 16px;
 }
 
-.contact-form2 form input {
-  width: 20rem;
+.contact-form2 form input,
+.contact-form2 form textarea {
+  width: 100%;
   height: 35px;
   padding: 7px;
   outline: none;
   border-radius: 5px;
   border: 2px solid rgb(175, 169, 169);
   color: #fff;
-}
-
-@media only screen and (max-width: 480px) {
-  .contact-form2 form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    font-size: 16px;
-  }
-  .contact-form2 form input {
-    width: 100%;
-    height: 35px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid rgb(175, 169, 169);
-  }
-
-}
-
-.contact-form2 form input:focus {
-  border: 2px solid rgba(0, 206, 158, 1);
+  box-sizing: border-box;
+  transition: background-color 0.6s ease;
 }
 
 .contact-form2 form textarea {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  max-height: 100px;
+  height: auto;
   min-height: 100px;
-  padding: 7px;
-  outline: none;
-  border-radius: 5px;
-  border: 2px solid rgb(175, 169, 169);
-  color: #fff;
+  resize: vertical;
 }
 
+.contact-form2 form input:focus,
 .contact-form2 form textarea:focus {
-  border: 2px solid rgba(0, 206, 158, 1);
+  border-color: rgba(0, 206, 158, 1);
 }
 
 .contact-form2 form label {
   margin-top: 2rem;
+  color: inherit;
 }
 
-.contact-form2 form input,
-.contact-form2 form textarea {
-  transition: background-color 0.6s ease;
-}
-
-/* When the form is successfully submitted */
 .contact-form2 form input.submitted,
 .contact-form2 form textarea.submitted {
-  background-color: rgba(0, 206, 158, 1); /* teal/blue color */
+  background-color: rgba(0, 206, 158, 1);
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-form2 {
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  .contact-form2 form {
+    font-size: 15px;
+  }
 }
